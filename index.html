@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Skills Test: </title>
+    
+    <!-- CSS -->
+     <link rel="stylesheet" href="styles.css">
+
+     <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+
+</head>
+<body>
+    <div class="container">
+        <h1>CINE SOPHIA TICKETS</h1>
+            <br>
+        
+            <h2>Student Details</h2>
+            <form>
+                <label class="Full Name"></label>
+                FULL NAME:
+                <input type="text" class="form-control"></label>
+                <br>
+            </form>
+
+            <h3>Ticket Selection</h3>
+            <label class="Quantity"></label>
+            QUANTITY:
+            <input type="number" id="qty" class="form-control" value="0" min="0">
+            <br>
+        
+            <h4>Payment Details</h4>
+            <label for="Payment"></label>
+            SUBTOTAL:
+            <input type="text" id="subtotalPrice" readonly class="form-control" value="P 0.00">
+            <br>
+            ADMIN FEE:
+            <input type="text" id="adminFee" readonly class="form-control" value="P 50.00">
+            <br>
+            TOTAL:
+             <input type="text" id="totalPrice" class="form-control" value="0.00">
+             <br>
+
+            <button type="button" class="btn btn-success" onclick="area()">Calculate</button>
+            <button type="button" class="btn btn-warning" onclick="window.location.reload()">Refresh</button>
+    </div>
+    <script src="main.js">
+
+    </script>
+</body>
+</html>
